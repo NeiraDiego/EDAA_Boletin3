@@ -4,7 +4,10 @@
 \hline
 Archivo & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ & $t_{\max}$ \\
 \hline
-english.50MB & 10 & 129575.40 & 1680.43 & 127365.00 & 131993.00 \\ % 82.185 MB
+english.50MB & 5 & 93776.00 & 5172.61 & 84533.00 & 96353.00 \\ % 82.185 MB
+english.100MB & 5 & 173567.40 & 6520.71 & 165107.00 & 183447.00 \\ % 164.990 MB
+english.200MB & 5 & 383622.20 & 17996.89 & 356419.00 & 406528.00 \\ % 331.005 MB
+english.1024MB\_clean.txt & 4 & 1938160.50 & 86606.18 & 1884124.00 & 2067303.00 \\ % 1515.570 MB
 \hline
 \end{tabular}
 
@@ -14,40 +17,44 @@ english.50MB & 10 & 129575.40 & 1680.43 & 127365.00 & 131993.00 \\ % 82.185 MB
 \hline
 Archivo & Patrón & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ & Ocurrencias \\
 \hline
-english.50MB & Moscow & 10 & 0.000 & 0.000 & 0.000 & 102 \\
-english.50MB & English & 10 & 0.000 & 0.000 & 0.000 & 1781 \\
-english.50MB & XDdabsdrsaf & 10 & 0.000 & 0.000 & 0.000 & 0 \\
+english.50MB & Moscow & 5 & 0.000 & 0.000 & 0.000 & 102 \\
+english.50MB & English & 5 & 0.000 & 0.000 & 0.000 & 1781 \\
+english.50MB & XDdabsdrsaf & 5 & 0.000 & 0.000 & 0.000 & 0 \\
+english.50MB & Storm & 5 & 0.000 & 0.000 & 0.000 & 38 \\
+english.50MB & Government & 5 & 0.000 & 0.000 & 0.000 & 1004 \\
+english.50MB & Salvation & 5 & 0.000 & 0.000 & 0.000 & 78 \\
+english.50MB & Revolution & 5 & 0.000 & 0.000 & 0.000 & 713 \\
+english.50MB & Power & 5 & 0.000 & 0.000 & 0.000 & 134 \\
+english.50MB & Congress & 5 & 0.000 & 0.000 & 0.000 & 622 \\
+english.100MB & Moscow & 5 & 0.000 & 0.000 & 0.000 & 160 \\
+english.100MB & English & 5 & 0.000 & 0.000 & 0.000 & 4832 \\
+english.100MB & XDdabsdrsaf & 5 & 0.000 & 0.000 & 0.000 & 0 \\
+english.100MB & Storm & 5 & 0.000 & 0.000 & 0.000 & 72 \\
+english.100MB & Government & 5 & 0.000 & 0.000 & 0.000 & 2593 \\
+english.100MB & Salvation & 5 & 0.000 & 0.000 & 0.000 & 89 \\
+english.100MB & Revolution & 5 & 0.000 & 0.000 & 0.000 & 1043 \\
+english.100MB & Power & 5 & 0.000 & 0.000 & 0.000 & 517 \\
+english.100MB & Congress & 5 & 0.000 & 0.000 & 0.000 & 1197 \\
+english.200MB & Moscow & 5 & 0.000 & 0.000 & 0.000 & 333 \\
+english.200MB & English & 5 & 0.000 & 0.000 & 0.000 & 9820 \\
+english.200MB & XDdabsdrsaf & 5 & 0.000 & 0.000 & 0.000 & 0 \\
+english.200MB & Storm & 5 & 0.000 & 0.000 & 0.000 & 129 \\
+english.200MB & Government & 5 & 0.000 & 0.000 & 0.000 & 3578 \\
+english.200MB & Salvation & 5 & 0.000 & 0.000 & 0.000 & 113 \\
+english.200MB & Revolution & 5 & 0.000 & 0.000 & 0.000 & 1418 \\
+english.200MB & Power & 5 & 0.000 & 0.000 & 0.000 & 683 \\
+english.200MB & Congress & 5 & 0.000 & 0.000 & 0.000 & 1684 \\
+english.1024MB\_clean.txt & Moscow & 4 & 0.000 & 0.000 & 0.000 & 1249 \\
+english.1024MB\_clean.txt & English & 4 & 0.000 & 0.000 & 0.000 & 60090 \\
+english.1024MB\_clean.txt & XDdabsdrsaf & 4 & 0.000 & 0.000 & 0.000 & 0 \\
+english.1024MB\_clean.txt & Storm & 4 & 0.000 & 0.000 & 0.000 & 540 \\
+english.1024MB\_clean.txt & Government & 4 & 0.000 & 0.000 & 0.000 & 16175 \\
+english.1024MB\_clean.txt & Salvation & 4 & 0.000 & 0.000 & 0.000 & 694 \\
+english.1024MB\_clean.txt & Revolution & 4 & 0.000 & 0.000 & 0.000 & 5415 \\
+english.1024MB\_clean.txt & Power & 4 & 0.000 & 0.000 & 0.000 & 3757 \\
+english.1024MB\_clean.txt & Congress & 4 & 0.000 & 0.000 & 0.000 & 7305 \\
 \hline
 \end{tabular}
 
 
 \section{Resultados del KMP}
-\subsection{Carga del texto para KMP}
-\begin{tabular}{lrrrrr}
-\hline
-Archivo & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ & $t_{\max}$ \\
-\hline
-english.50MB & 5 & 144.00 & 9.25 & 138.00 & 160.00 \\ % 50.000 MB
-\hline
-\end{tabular}
-
-
-\subsection{Búsquedas con KMP}
-\begin{tabular}{llrrrr}
-\hline
-Archivo & Patrón & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ \\
-\hline
-english.50MB & Moscow & 5 & 82.600 & 1.140 & 81.000 \\
-english.50MB & English & 5 & 83.000 & 1.871 & 81.000 \\
-english.50MB & XDdabsdrsaf & 5 & 84.200 & 1.924 & 82.000 \\
-english.50MB & Storm & 5 & 85.400 & 1.817 & 83.000 \\
-english.50MB & Government & 5 & 85.000 & 2.449 & 82.000 \\
-english.50MB & Salvation & 5 & 84.800 & 5.167 & 82.000 \\
-english.50MB & Revolution & 5 & 84.200 & 3.564 & 81.000 \\
-english.50MB & Power & 5 & 85.400 & 1.673 & 84.000 \\
-english.50MB & Congress & 5 & 84.200 & 2.387 & 81.000 \\
-english.50MB & aksld;fjaslbk & 5 & 115.800 & 3.033 & 112.000 \\
-english.50MB & asklbkashhvcsd & 5 & 116.400 & 2.608 & 113.000 \\
-\hline
-\end{tabular}
-
