@@ -1,0 +1,28 @@
+% ==== Gráfico KMP: tiempos promedio de búsqueda por archivo ====
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=12pt,
+    ylabel={Tiempo promedio de búsqueda (ms)},
+    symbolic x coords={english.100MB,english.1024MB\_clean.txt,english.200MB,english.50MB},
+    xtick=data,
+    x tick label style={rotate=45, anchor=east},
+    ymin=0,
+    width=0.9\textwidth,
+    height=0.45\textwidth,
+    nodes near coords,
+    every node near coord/.append style={font=\small, rotate=90, anchor=west},
+    enlarge x limits=0.15,
+]
+\addplot coordinates {
+(english.100MB, 108.309)
+(english.1024MB\_clean.txt, 1112.091)
+(english.200MB, 217.000)
+(english.50MB, 56.800)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Tiempo promedio de búsqueda con KMP por archivo.}
+\end{figure}
