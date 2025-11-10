@@ -8,9 +8,12 @@
 #include <string>
 #include <iostream>
 #include <algorithm>
+#include <chrono>
 
 using namespace sdsl;
 using namespace std;
+using namespace std::chrono;
+
 
 int main(int argc, char** argv) {
   if (argc !=  2) {
@@ -25,10 +28,14 @@ int main(int argc, char** argv) {
   // otras combinaciones
   cout << "Construyendo el FM-index ..." << endl;
   csa_wt<wt_int<>> fm_index;
+  auto inicio = high_resolution_clock::now();
   construct(fm_index, argv[1], 1);
   
+  auto fin = high_resolution_clock::now();
+  auto t_total = duration_cast<milliseconds>(fin - inicio).count();
     
   cout << "Tamaño del FM-index " << size_in_mega_bytes(fm_index) << " MB." << endl;
+  cout << "Tiempo empleado: " << t_total << " ms" << endl;
 
     string patron;
     cout << "Ingrese un patrón a buscar: ";
