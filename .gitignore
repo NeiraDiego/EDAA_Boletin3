@@ -3,8 +3,13 @@ FM
 KMP
 
 english.1024MB
-english.200MB
+
+
 english.50MB
+english.200MB
+english.100MB
 english.1024MB_clean.txt
+
+
 *.sdsl
 nohup_FM_experimentos.out

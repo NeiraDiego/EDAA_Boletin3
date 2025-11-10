@@ -12,6 +12,9 @@ FM_BIN=./FM
 # Archivos a procesar
 FILES=(
     "english.50MB"
+    "english.200MB"
+    "english.100MB"
+    "english.1024MB_clean.txt"
 )
 
 # Patrones a buscar
@@ -19,8 +22,13 @@ PATTERNS=(
     "Moscow"
     "English"
     "XDdabsdrsaf"
+    "Storm"
+    "Government"
+    "Salvation"
+    "Revolution"
+    "Power"
+    "Congress"
 )
-
 # Número de repeticiones
 REPEATS=5
 
