@@ -111,9 +111,9 @@ int main(int argc, char** argv) {
         if (!res.empty()) {
             sort(res.begin(), res.end());
             cout << "Las ocurrencias comienzan en las siguientes posiciones:\n";
-            for (size_t i = 0; i < res.size(); i++)
-                cout << res[i] << " ";
-            cout << "\n";
+            for (size_t i = 0; i < res.size()-1; i++)
+                cout << res[i] << ",";
+            cout << res[res.size()-1] << "\n";
         }
 
         cout << "Tiempo de búsqueda: " << t_busqueda << " ms\n";
