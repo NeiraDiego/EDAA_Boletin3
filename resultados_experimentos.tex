@@ -1,0 +1,53 @@
+\section{Resultados del FM-index}
+\subsection{Construcción del FM-index}
+\begin{tabular}{lrrrrr}
+\hline
+Archivo & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ & $t_{\max}$ \\
+\hline
+english.50MB & 10 & 129575.40 & 1680.43 & 127365.00 & 131993.00 \\ % 82.185 MB
+\hline
+\end{tabular}
+
+
+\subsection{Búsquedas con FM-index}
+\begin{tabular}{llrrrrr}
+\hline
+Archivo & Patrón & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ & Ocurrencias \\
+\hline
+english.50MB & Moscow & 10 & 0.000 & 0.000 & 0.000 & 102 \\
+english.50MB & English & 10 & 0.000 & 0.000 & 0.000 & 1781 \\
+english.50MB & XDdabsdrsaf & 10 & 0.000 & 0.000 & 0.000 & 0 \\
+\hline
+\end{tabular}
+
+
+\section{Resultados del KMP}
+\subsection{Carga del texto para KMP}
+\begin{tabular}{lrrrrr}
+\hline
+Archivo & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ & $t_{\max}$ \\
+\hline
+english.50MB & 5 & 144.00 & 9.25 & 138.00 & 160.00 \\ % 50.000 MB
+\hline
+\end{tabular}
+
+
+\subsection{Búsquedas con KMP}
+\begin{tabular}{llrrrr}
+\hline
+Archivo & Patrón & Reps & $\overline{t}$ (ms) & $\sigma$ & $t_{\min}$ \\
+\hline
+english.50MB & Moscow & 5 & 82.600 & 1.140 & 81.000 \\
+english.50MB & English & 5 & 83.000 & 1.871 & 81.000 \\
+english.50MB & XDdabsdrsaf & 5 & 84.200 & 1.924 & 82.000 \\
+english.50MB & Storm & 5 & 85.400 & 1.817 & 83.000 \\
+english.50MB & Government & 5 & 85.000 & 2.449 & 82.000 \\
+english.50MB & Salvation & 5 & 84.800 & 5.167 & 82.000 \\
+english.50MB & Revolution & 5 & 84.200 & 3.564 & 81.000 \\
+english.50MB & Power & 5 & 85.400 & 1.673 & 84.000 \\
+english.50MB & Congress & 5 & 84.200 & 2.387 & 81.000 \\
+english.50MB & aksld;fjaslbk & 5 & 115.800 & 3.033 & 112.000 \\
+english.50MB & asklbkashhvcsd & 5 & 116.400 & 2.608 & 113.000 \\
+\hline
+\end{tabular}
+
